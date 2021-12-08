@@ -52,8 +52,11 @@ a{
 }
 
 .img-2{
-	padding-right: 8px;
-	border: 1px solid #fff;
+	position: absolute;
+	left: 30%;
+	width: 22px;
+	height: 22px;
+	border: 2px solid #fff;
 }
 
 .img{
@@ -69,10 +72,11 @@ a{
 
 .card-info-cont, .img-card, .add-remove-btn-cont, .mutual-chomies-img-cont, .mutual-chomies-cont{
 	display: flex;
+	position: relative;
 }
 
 .mutual-chomies-img-cont{
-	padding-right: 6px;
+	padding-right: 25px;
 }
 
 .mutual-chomies-cont{
@@ -125,10 +129,11 @@ a{
 	cursor: pointer;
 	font-size: 1.2rem;
 	font-family: "Poppins", sans-serif;
+	transition: 0.3s;
 }
 
 .add-friend-btn span,.remove-friend-btn{
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 600;
 	white-space: nowrap;
 }
@@ -136,6 +141,14 @@ a{
 .remove-friend-btn{
 	color: #000;
 	background-color: rgba(0, 0, 0, 0.15);
+}
+
+.add-friend-btn:hover{
+	background-color: #2851A3;
+}
+
+.remove-friend-btn:hover{
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .user{
