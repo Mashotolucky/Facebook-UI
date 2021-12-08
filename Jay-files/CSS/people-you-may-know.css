@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%20|%20Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%20|%20Hind:300,400,500,600,700');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+	/* font-family: Helvetica, Arial, sans-serif; */
+	background-color: #f1f2f3;
+}
+
+a{
+	text-decoration: none;
+}
+
+.img-card-cont{
+	padding: 1rem 1.5rem;
+}
+
+.img-card{
+	width: 100%;
+	max-width: 300px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.card-info-cont, .img-card{
+	flex-direction: column;
+}
+
+.img-cont, .img-card-cont, .add-friend-cont, .add-friend-btn, .remove-friend-btn, .mutual-chomies-img{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-cont, .mutual-chomies-img{
+	border-radius: 10px 10px 0 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.mutual-chomies-img{
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+}
+
+.img-2{
+	padding-right: 8px;
+	border: 1px solid #fff;
+}
+
+.img{
+	user-select: none;
+	max-width: 100%;
+}
+
+.chomies-img{
+	user-select: none;
+	width: 20px;
+	height: 20px;
+}
+
+.card-info-cont, .img-card, .add-remove-btn-cont, .mutual-chomies-img-cont, .mutual-chomies-cont{
+	display: flex;
+}
+
+.mutual-chomies-img-cont{
+	padding-right: 6px;
+}
+
+.mutual-chomies-cont{
+	justify-content: stretch;
+}
+
+.add-remove-btn-cont{
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card-title-cont, .mutual-chomies-cont{
+	padding-bottom: 6px;
+}
+
+.card-info-cont{
+	padding: 8px;
+}
+
+.card-title-cont a h1{
+	margin: 0;
+	color: #000;
+	font-size: 1.0625rem;
+	font-weight: 600;
+}
+
+.card-title-cont a{
+	line-height: 1.1765;
+}
+
+.mutual-chomies-cont span{
+	color: #606770;
+	font-size: .9375rem;
+}
+
+/* .add-friend-cont .remove-friend-cont{
+	width: 100%;
+	max-width: 150px;
+} */
+
+.add-friend-btn, .remove-friend-btn{
+	width: 138px;
+	max-width: 100%;
+	outline: none;
+	border: none;
+	padding: 8px 18px;
+	background-color: #1877F2;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.2rem;
+	font-family: "Poppins", sans-serif;
+}
+
+.add-friend-btn span,.remove-friend-btn{
+	font-size: 12px;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.remove-friend-btn{
+	color: #000;
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+.user{
+	padding-right: 8px;
+}
