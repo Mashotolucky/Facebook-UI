@@ -17,26 +17,82 @@ a{
 	text-decoration: none;
 }
 
+.find-know-peeps-cont{
+	display: flex;
+	justify-content: center;
+}
+
+.find-know-peeps{
+	width: 100%;
+	background-color: #fff;
+	overflow: hidden;
+	/* max-width: 2870px; */
+}
+
 .img-card-cont{
-	padding: 1rem 1.5rem;
+	padding: 1rem;
+}
+
+.find-know-peeps-cont{
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.find-know-peeps-header-cont{
+	padding-top: 1rem;
+}
+
+.find-know-peeps-header-cont, .all-img-cards-cont{
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.img-card-cont:first-child{
+	padding-left: 0;
 }
 
 .img-card{
-	width: 100%;
+	width: 300px;
 	max-width: 300px;
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
 
-.card-info-cont, .img-card{
+.card-info-cont, .img-card, .find-know-peeps{
 	flex-direction: column;
 }
 
-.img-cont, .img-card-cont, .add-friend-cont, .add-friend-btn, .remove-friend-btn, .mutual-chomies-img{
+.img-cont, .img-card-cont, .add-friend-cont, .add-friend-btn, .remove-friend-btn, .mutual-chomies-img, .find-know-peeps, .find-know-peeps-header-cont, .all-img-cards-cont, .find-know-peeps-footer-cont{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.find-know-peeps-header-cont,.find-know-peeps-footer-cont{
+	width: 100%;
+}
+
+.find-know-peeps-header-cont, .all-img-cards-cont{
+	justify-content: space-between;
+}
+
+.all-img-cards-cont{
+	/* overflow: hidden; */
+	flex-wrap: nowrap;
+}
+
+.find-know-peeps-header-cont h1{
+	color: #606770;
+	font-weight: 600;
+	font-size: 1rem;
+	margin: 0;
+}
+
+.find-know-peeps-header-cont i{
+	cursor: pointer;
+	margin-top: 5px;
+	font-size: 1.2rem;
 }
 
 .img-cont, .mutual-chomies-img{
@@ -118,7 +174,7 @@ a{
 } */
 
 .add-friend-btn, .remove-friend-btn{
-	width: 138px;
+	width: 100%;
 	max-width: 100%;
 	outline: none;
 	border: none;
@@ -141,6 +197,22 @@ a{
 .remove-friend-btn{
 	color: #000;
 	background-color: rgba(0, 0, 0, 0.15);
+}
+
+.find-know-peeps-footer-cont{
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.find-know-peeps-footer-cont{
+	padding: 1rem;
+}
+
+.find-know-peeps-footer-cont h1{
+	font-size: 1rem;
+	margin: 0;
 }
 
 .add-friend-btn:hover{
