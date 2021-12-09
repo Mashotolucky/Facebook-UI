@@ -9,7 +9,6 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: "Poppins", sans-serif;
-	/* font-family: Helvetica, Arial, sans-serif; */
 	background-color: #f1f2f3;
 }
 
@@ -20,17 +19,17 @@ a{
 .find-know-peeps-cont{
 	display: flex;
 	justify-content: center;
+	width: 100%;
 }
 
 .find-know-peeps{
 	width: 100%;
-	background-color: #fff;
-	overflow: hidden;
+	/* overflow: hidden; */
 	/* max-width: 2870px; */
 }
 
 .img-card-cont{
-	padding: 1rem;
+	padding: 1rem 8px;
 }
 
 .find-know-peeps-cont{
@@ -39,21 +38,24 @@ a{
 }
 
 .find-know-peeps-header-cont{
+	width: 100%;
+	max-width: 1150px;
 	padding-top: 1rem;
 }
 
-.find-know-peeps-header-cont, .all-img-cards-cont{
+.find-know-peeps-header-cont{
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 }
 
-.img-card-cont:first-child{
-	padding-left: 0;
+.all-img-cards-cont{
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 .img-card{
-	width: 300px;
-	max-width: 300px;
+	width: 260px;
+	max-width: 260px;
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 0 5px rgba(0,0,0,0.3);
@@ -63,7 +65,7 @@ a{
 	flex-direction: column;
 }
 
-.img-cont, .img-card-cont, .add-friend-cont, .add-friend-btn, .remove-friend-btn, .mutual-chomies-img, .find-know-peeps, .find-know-peeps-header-cont, .all-img-cards-cont, .find-know-peeps-footer-cont{
+.add-remove-btn-cont, .img-cont, .img-card-cont, .add-friend-cont, .add-friend-btn, .remove-friend-btn, .mutual-chomies-img, .find-know-peeps, .find-know-peeps-header-cont, .all-img-cards-cont, .find-know-peeps-footer-cont{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -73,29 +75,38 @@ a{
 	width: 100%;
 }
 
-.find-know-peeps-header-cont, .all-img-cards-cont{
+.find-know-peeps-header-cont{
 	justify-content: space-between;
 }
 
 .all-img-cards-cont{
+	justify-content: stretch;
+}
+
+.all-img-cards-cont{
 	/* overflow: hidden; */
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 }
 
 .find-know-peeps-header-cont h1{
-	color: #606770;
+	color: #000;
 	font-weight: 600;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	margin: 0;
 }
 
-.find-know-peeps-header-cont i{
-	cursor: pointer;
-	margin-top: 5px;
-	font-size: 1.2rem;
+.find-know-peeps-header-cont a{
+	border-radius: 5px;
+	padding: 8px 12px;
+	transition: 0.3s;
+}
+
+.find-know-peeps-header-cont a:hover{
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 .img-cont, .mutual-chomies-img{
+	cursor: pointer;
 	border-radius: 10px 10px 0 0;
 	width: 100%;
 	overflow: hidden;
@@ -140,8 +151,8 @@ a{
 }
 
 .add-remove-btn-cont{
-	flex-wrap: wrap;
-	justify-content: space-between;
+	align-items: stretch;
+	flex-direction: column;
 }
 
 .card-title-cont, .mutual-chomies-cont{
@@ -168,24 +179,26 @@ a{
 	font-size: .9375rem;
 }
 
-/* .add-friend-cont .remove-friend-cont{
+.add-friend-cont .remove-friend-cont, .add-remove-btn-cont{
 	width: 100%;
-	max-width: 150px;
-} */
+}
 
 .add-friend-btn, .remove-friend-btn{
 	width: 100%;
-	max-width: 100%;
 	outline: none;
 	border: none;
 	padding: 8px 18px;
-	background-color: #1877F2;
+	background-color: #ECF3FF;
 	border-radius: 5px;
-	color: #fff;
+	color: #1877F2;
 	cursor: pointer;
 	font-size: 1.2rem;
 	font-family: "Poppins", sans-serif;
 	transition: 0.3s;
+}
+
+.add-friend-btn{
+	margin-bottom: 6px;
 }
 
 .add-friend-btn span,.remove-friend-btn{
@@ -197,6 +210,11 @@ a{
 .remove-friend-btn{
 	color: #000;
 	background-color: rgba(0, 0, 0, 0.15);
+}
+
+.all-cards-cont{
+	width: 100%;
+	max-width: 1170px;
 }
 
 .find-know-peeps-footer-cont{
@@ -216,7 +234,7 @@ a{
 }
 
 .add-friend-btn:hover{
-	background-color: #2851A3;
+	background-color: #AAC9FF;
 }
 
 .remove-friend-btn:hover{
