@@ -23,12 +23,14 @@ a{
 .side-bar-cont{
 	width: 100%;
 	max-width: 350px;
-	/* position: fixed;
-	left: 0; */
 }
 
 .side-bar-bg-cont{
-	width: 100%;
+	position: fixed;
+	/* left: 0; */
+	height: 100%;
+	width: 350px;
+	/* max-width: 350px; */
 	background-color: #fff;
 	box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
@@ -61,6 +63,11 @@ a{
 	cursor: default;
 }
 
+.side-bar-contents-cont li.side-bar-header > i{
+	padding: 6px 8px;
+	font-size: 1.5rem;
+}
+
 .side-bar-contents-cont li.side-bar-header:hover{
 	background-color: transparent;
 }
@@ -73,6 +80,7 @@ a{
 }
 
 .side-bar-contents-cont li > i.chev{
+	color: rgba(0, 0, 0, 0.3);
 	padding: 0;
 	font-weight: 600;
 	font-size: 1.1rem;
@@ -105,13 +113,14 @@ a{
 .find-know-peeps-cont{
 	display: flex;
 	justify-content: center;
+	/* justify-content: flex-start; */
 	width: 100%;
 }
 
 .find-know-peeps{
 	width: 100%;
 	/* overflow: hidden; */
-	/* max-width: 2870px; */
+	max-width: 980px;
 }
 
 .img-card-cont{
