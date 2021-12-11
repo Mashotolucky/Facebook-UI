@@ -21,13 +21,40 @@ a{
 }
 
 .side-bar-cont{
-	display: flex;
-	background-color: #fff;
 	width: 100%;
 	max-width: 350px;
-	box-shadow: 0 0 5px rgba(0,0,0,0.2);
 	/* position: fixed;
 	left: 0; */
+}
+
+.side-bar-bg-cont{
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.side-bar-contents-cont, .side-bar-bg-cont, .side-bar-cont, .page-cont, .side-bar-contents-cont, .side-bar-contents-cont li{
+	display: flex;
+}
+
+.side-bar-contents-cont{
+	list-style: none;
+	flex-direction: column;
+	padding: 1rem;
+	width: 100%;
+}
+
+.side-bar-contents-cont li{
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+.side-bar-contents-cont li:hover{
+	background-color: #eee;
 }
 
 .find-know-peeps-cont{
@@ -154,7 +181,7 @@ a{
 	height: 20px;
 }
 
-.card-info-cont, .img-card, .add-remove-btn-cont, .mutual-chomies-img-cont, .mutual-chomies-cont, .page-cont{
+.card-info-cont, .img-card, .add-remove-btn-cont, .mutual-chomies-img-cont, .mutual-chomies-cont{
 	display: flex;
 	position: relative;
 }
