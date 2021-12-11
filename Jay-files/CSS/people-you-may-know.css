@@ -16,6 +16,20 @@ a{
 	text-decoration: none;
 }
 
+.page-cont{
+	
+}
+
+.side-bar-cont{
+	display: flex;
+	background-color: #fff;
+	width: 100%;
+	max-width: 350px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+	/* position: fixed;
+	left: 0; */
+}
+
 .find-know-peeps-cont{
 	display: flex;
 	justify-content: center;
@@ -38,6 +52,7 @@ a{
 }
 
 .find-know-peeps-header-cont{
+	flex-wrap: wrap;
 	width: 100%;
 	max-width: 1150px;
 	padding-top: 1rem;
@@ -54,8 +69,8 @@ a{
 }
 
 .img-card{
-	width: 260px;
-	max-width: 260px;
+	width: 100%;
+	max-width: 220px;
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 0 5px rgba(0,0,0,0.3);
@@ -93,11 +108,13 @@ a{
 	font-weight: 600;
 	font-size: 1.2rem;
 	margin: 0;
+	white-space: nowrap;
 }
 
 .find-know-peeps-header-cont a{
 	border-radius: 5px;
 	padding: 8px 12px;
+	white-space: nowrap;
 	transition: 0.3s;
 }
 
@@ -137,7 +154,7 @@ a{
 	height: 20px;
 }
 
-.card-info-cont, .img-card, .add-remove-btn-cont, .mutual-chomies-img-cont, .mutual-chomies-cont{
+.card-info-cont, .img-card, .add-remove-btn-cont, .mutual-chomies-img-cont, .mutual-chomies-cont, .page-cont{
 	display: flex;
 	position: relative;
 }
@@ -242,5 +259,13 @@ a{
 }
 
 .user{
+	/* color: #fff;
+	background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yX/r/5JVhSAHqR6r.png);
+    background-position: -147px -67px;
+    background-size: auto;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    display: inline-block; */
 	padding-right: 8px;
 }
