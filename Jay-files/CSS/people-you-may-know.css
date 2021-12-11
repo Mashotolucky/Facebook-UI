@@ -40,14 +40,14 @@ a{
 .side-bar-contents-cont{
 	list-style: none;
 	flex-direction: column;
-	padding: 1rem;
+	padding: 1rem 8px;
 	width: 100%;
 }
 
 .side-bar-contents-cont li{
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem;
+	padding: 8px 10px;
 	cursor: pointer;
 	border-radius: 5px;
 	transition: 0.3s;
@@ -55,6 +55,51 @@ a{
 
 .side-bar-contents-cont li:hover{
 	background-color: #eee;
+}
+
+.side-bar-contents-cont li.side-bar-header{
+	cursor: default;
+}
+
+.side-bar-contents-cont li.side-bar-header:hover{
+	background-color: transparent;
+}
+
+.side-bar-contents-cont li > i, .left-content > i{
+	padding: 8px 10px;
+	font-size: 1.3rem;
+	border-radius: 100%;
+	background-color: #ddd;
+}
+
+.side-bar-contents-cont li > i.chev{
+	padding: 0;
+	font-weight: 600;
+	font-size: 1.1rem;
+	border-radius: 0;
+	background-color: transparent;
+}
+
+.left-content > i{
+	margin-right: 8px;
+}
+
+.side-bar-contents-cont li > .active > i{
+	color: #fff;
+	background-color: blue;
+}
+
+.side-bar-contents-cont li.active{
+	background-color: #eee;
+}
+
+.side-bar-contents-cont li > .left-content span{
+	font-weight: 600;
+}
+
+.side-bar-contents-cont li > .left-content.side-bar-title > span{
+	font-size: 1.5rem;
+	font-weight: 700;
 }
 
 .find-know-peeps-cont{
