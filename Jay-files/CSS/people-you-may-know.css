@@ -342,3 +342,16 @@ a{
 .user{
 	padding-right: 8px;
 }
+
+@media screen and (max-width: 630px){
+	.side-bar-cont{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 520px){
+	.img-card{
+		width: 100%;
+		max-width: 100%;
+	}
+}
